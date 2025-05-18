@@ -36,6 +36,7 @@ public class Rettilineo extends AbstractSegment {
 
     /**
      * Restituisce le coordinate centrali delle corsie del rettilineo, considerando la rotazione
+     *
      * @return le coordinate centrali delle corsie del rettilineo, considerando la rotazione
      */
     public List<Point2D.Float> getLaneCenterPosition() {
@@ -66,7 +67,6 @@ public class Rettilineo extends AbstractSegment {
         }
         return centers;
     }
-
 
     /**
      * Calcola le coordinate del punto finale del rettilineo in base alla rotazione
