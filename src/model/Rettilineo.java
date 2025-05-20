@@ -46,19 +46,19 @@ public class Rettilineo extends AbstractSegment {
             float centerX, centerY;
 
             centerY = switch (rotationStep) {
-                case 1 -> {
+                case 1 -> {         // verticale verso il basso
                     centerX = startX + (i * 0.5f) * (width / (float) numeroBinari);
                     yield startY + height / 2f;
                 }
-                case 2 -> {
+                case 2 -> {         // invertito orizzontale
                     centerX = startX + width / 2f;
                     yield startY + (numeroBinari - 1 - i * 0.5f) * (height / (float) numeroBinari);
                 }
-                case 3 -> {
+                case 3 -> {         // verticale verso l'alto
                     centerX = startX + (i * 0.5f) * (width / (float) numeroBinari);
                     yield startY - height / 2f;
                 }
-                default -> {
+                default -> {        // orizzontale verso destra
                     centerX = startX + width / 2f;
                     yield startY + (i * 0.5f) * (height / (float) numeroBinari);
                 }
