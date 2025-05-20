@@ -76,19 +76,19 @@ public class Rettilineo extends AbstractSegment {
     public Point2D.Float getEndPoint() {
         float endX, endY;
         endY = switch (rotationStep) {
-            case 1 -> {
+            case 1 -> {         // 90° clockwise
                 endX = startX;
                 yield startY + height;
             }
-            case 2 -> {
+            case 2 -> {         // 180°
                 endX = startX - width;
                 yield startY;
             }
-            case 3 -> {
+            case 3 -> {         // 270°
                 endX = startX;
                 yield startY - height;
             }
-            default -> {
+            default -> {        // 0°
                 endX = startX + width;
                 yield startY;
             }
