@@ -1,5 +1,7 @@
 package view;
 
+import utility.GameConstants;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -20,7 +22,7 @@ public class GamePanel extends JPanel {
      * Metodo privato che imposta le dimensioni del GamePanel
      */
     private void setSize() {
-        Dimension dimension = new Dimension(1280, 720);
+        Dimension dimension = new Dimension(GameConstants.Game.GAME_WIDTH, GameConstants.Game.GAME_HEIGHT);
         this.setPreferredSize(dimension);
         this.setMinimumSize(dimension);
         this.setMaximumSize(dimension);
