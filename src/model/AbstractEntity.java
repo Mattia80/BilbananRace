@@ -2,10 +2,8 @@ package model;
 
 public abstract class AbstractEntity extends AbstractModel {
 
-    private boolean moving;
-    private float speed;
-    private int id;
-
+    private String idUnivoco;
+    private boolean active;
 
     /**
      * Costruisce un modello con posizione iniziale e dimensioni
@@ -17,5 +15,21 @@ public abstract class AbstractEntity extends AbstractModel {
      */
     public AbstractEntity(float startX, float startY, int width, int height) {
         super(startX, startY, width, height);
+    }
+
+    public String getIdUnivoco() {
+        return idUnivoco;
+    }
+
+    public void setIdUnivoco(String idUnivoco) {
+        this.idUnivoco = idUnivoco;
+    }
+
+    public boolean isActive() {
+        return active;
+    }
+
+    public void setActive(boolean active) {
+        this.active = active;
     }
 }

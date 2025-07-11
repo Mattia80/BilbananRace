@@ -3,7 +3,7 @@ package model;
 /**
  * Classe astratta che rappresenta un generico segmento della pista
  */
-public abstract class AbstractSegment extends AbstractModel {
+public abstract class AbstractSegment extends AbstractEntity {
     /**
      * Numero di binari (giocatori) sul segmento
      */
