@@ -6,7 +6,7 @@ import view.GameWindow;
 public class GameManager {
     private static GameManager instance;
     private final GamePanel gamePanel;
-    private GameWindow gameWindow;
+    private final GameWindow gameWindow;
 
     public static GameManager getInstance() {
         if (instance == null) {
