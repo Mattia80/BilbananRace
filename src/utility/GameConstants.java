@@ -16,7 +16,7 @@ public class GameConstants {
     }
 
     public static class Player {
-
+        
     }
 
 }
